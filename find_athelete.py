@@ -35,7 +35,7 @@ class User(Base):
     """
     __tablename__ = 'user'
 
-    id = sa.Column(sa.String(36), primary_key=True)
+    id = sa.Column(sa.Integer, primary_key=True)
     first_name = sa.Column(sa.Text)
     last_name = sa.Column(sa.Text)
     gender = sa.Column(sa.Text)
